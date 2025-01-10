@@ -58,7 +58,7 @@ section {
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Align content vertically */
@@ -115,12 +115,12 @@ section {
 /* Mobile Styles for Cards */
 @media (max-width: 768px) {
     .project-card {
-        width: 90%;
+        width: 95%;
         height: 450px; /* Increased height for mobile readability */
     }
 
     .project-card-front, .project-card-back {
-        padding: 20px;
+        padding: 10px;
         font-size: 16px;
     }
 
