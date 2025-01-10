@@ -26,11 +26,10 @@ section {
 }
 
 /* Card Styles */
-/* Ensure Consistent Height for Cards */
 .project-card {
     perspective: 1000px;
-    width: 650px; /* Desktop width */
-    height: 400px; /* Consistent height */
+    width: 600px; /* Adjusted for 4:3 ratio */
+    height: 450px; /* Adjusted for 4:3 ratio */
     margin: 10px auto;
     overflow: hidden; /* Prevent content overflow */
 }
@@ -52,18 +51,18 @@ section {
 .project-card-front, .project-card-back {
     position: absolute;
     width: 100%;
-    height: 100%; /* Ensure both sides have the same height */
+    height: 100%; /* Matches the height of the card */
     backface-visibility: hidden;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Align content vertically */
+    justify-content: space-around;
     align-items: center;
-    overflow-y: auto; /* Allow scrolling if content exceeds available height */
+    overflow-y: auto; /* Enable scrolling for longer content */
 }
 
 .project-card-back {
@@ -71,7 +70,6 @@ section {
     background-color: #f9f9f9;
     color: #333;
 }
-
 
 /* Navigation Bar */
 .navbar {
@@ -115,21 +113,21 @@ section {
 /* Mobile Styles for Cards */
 @media (max-width: 768px) {
     .project-card {
-        width: 98%;
-        height: 450px; /* Increased height for mobile readability */
+        width: 90%; /* Keep the width proportional to the screen */
+        height: auto; /* Let the height adjust dynamically */
     }
 
     .project-card-front, .project-card-back {
-        padding: 10px;
+        padding: 20px;
         font-size: 16px;
     }
 
     .project-card-inner {
-        height: 100%;
+        height: 100%; /* Ensure inner content adjusts to the card height */
     }
 }
 
-/* Consolidated Back Styles */
+/* Scrolling for Overflowing Content */
 .project-card-back {
-    overflow-y: auto; /* Enable scrolling for long content */
+    overflow-y: auto; /* Enable scrolling for longer content */
 }
