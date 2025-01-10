@@ -31,7 +31,7 @@ section {
     perspective: 1000px;
     width: 650px; /* Desktop width */
     height: 400px; /* Consistent height */
-    margin: 5px auto;
+    margin: 10px auto;
     overflow: hidden; /* Prevent content overflow */
 }
 
@@ -115,7 +115,7 @@ section {
 /* Mobile Styles for Cards */
 @media (max-width: 768px) {
     .project-card {
-        width: 95%;
+        width: 98%;
         height: 450px; /* Increased height for mobile readability */
     }
 
