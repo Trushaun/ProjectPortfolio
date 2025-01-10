@@ -111,7 +111,13 @@ section {
 }
 
 /* Mobile Styles for Cards */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+        
+
     .project-card {
         width: 90%; /* Keep the width proportional to the screen */
         height: auto; /* Let the height adjust dynamically */
