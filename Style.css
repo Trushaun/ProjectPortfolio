@@ -61,7 +61,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: left;
     overflow-y: auto; /* Enable scrolling for longer content */
 }
 
@@ -70,6 +70,17 @@ section {
     background-color: #f9f9f9;
     color: #333;
 }
+
+/* Specific Fix for Bullet Points in Back of Card */
+.project-card-back ul {
+    text-align: left; /* Aligns the text and bullets to the left */
+    padding-left: 20px; /* Adds space between the bullets and the card edge */
+}
+
+.project-card-back ul li {
+    margin-bottom: 8px; /* Adds consistent spacing between list items */
+}
+
 
 /* Navigation Bar */
 .navbar {
