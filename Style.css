@@ -26,10 +26,11 @@ section {
 }
 
 /* Card Styles */
+/* Ensure Consistent Height for Cards */
 .project-card {
     perspective: 1000px;
-    width: 600px; /* 4:3 ratio width */
-    height: 450px; /* 4:3 ratio height */
+    width: 400px; /* Desktop width */
+    height: 400px; /* Consistent height */
     margin: 10px auto;
     overflow: hidden; /* Prevent content overflow */
 }
@@ -51,7 +52,7 @@ section {
 .project-card-front, .project-card-back {
     position: absolute;
     width: 100%;
-    height: 100%; /* Matches the height of the card */
+    height: 100%; /* Ensure both sides have the same height */
     backface-visibility: hidden;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -60,25 +61,17 @@ section {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start; /* Align items to the start for better control */
-    overflow-y: auto; /* Enable scrolling for longer content */
-    word-wrap: break-word; /* Ensures words wrap within boundaries */
-    hyphens: auto; /* Adds hyphens if needed for better word wrapping */
+    justify-content: center; /* Align content vertically */
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling if content exceeds available height */
 }
 
-/* Specific Fix for Bullet Points */
-.project-card-back ul {
-    text-align: left; /* Align bullets and text to the left */
-    padding-left: 20px; /* Adds space between bullets and the card edge */
-    margin: 0; /* Reset margin for better alignment */
+.project-card-back {
+    transform: rotateY(180deg);
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-.project-card-back ul li {
-    margin-bottom: 8px; /* Adds consistent spacing between bullet points */
-    word-wrap: break-word; /* Ensure long words wrap properly */
-    hyphens: auto; /* Hyphenate long words for readability */
-}
 
 /* Navigation Bar */
 .navbar {
@@ -122,8 +115,8 @@ section {
 /* Mobile Styles for Cards */
 @media (max-width: 768px) {
     .project-card {
-        width: 90%; /* Keep the width proportional to the screen */
-        height: auto; /* Let the height adjust dynamically */
+        width: 90%;
+        height: 450px; /* Increased height for mobile readability */
     }
 
     .project-card-front, .project-card-back {
@@ -132,11 +125,11 @@ section {
     }
 
     .project-card-inner {
-        height: 100%; /* Ensure inner content adjusts to the card height */
+        height: 100%;
     }
 }
 
-/* Scrolling for Overflowing Content */
+/* Consolidated Back Styles */
 .project-card-back {
-    overflow-y: auto; /* Enable scrolling for longer content */
+    overflow-y: auto; /* Enable scrolling for long content */
 }
