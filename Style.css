@@ -111,10 +111,10 @@ section {
 }
 
 /* Mobile Styles for Cards */
-@media (max-width: 768px) {
+@media (max-width: 768px, max-height: 550px) {
     .project-card {
         width: 90%; /* Allow the card to use most of the screen width */
-        height: auto; /* Let the height adjust dynamically based on content */
+        height: 85%; /* Let the height adjust dynamically based on content */
     }
 
     .project-card-inner {
@@ -122,7 +122,7 @@ section {
     }
 
     .project-card-front, .project-card-back {
-        padding: 15px; /* Reduce padding to save space */
+        padding: 5px; /* Reduce padding to save space */
         font-size: 14px; /* Adjust text size for readability */
     }
 
