@@ -30,7 +30,7 @@ section {
 .project-card {
     perspective: 1000px;
     width: 400px; /* Increased width */
-    height: 300px; /* Increased height */
+    height: 400px; /* Increased height */
 }
 
 .project-card-inner {
