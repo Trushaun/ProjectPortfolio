@@ -111,33 +111,33 @@ section {
 }
 
 /* Mobile Styles for Cards */
-@media (max-width: 768px, max-height: 550px) {
+/* Mobile Styles for Taller Cards */
+@media (max-width: 768px) {
     .project-card {
-        width: 90%; /* Allow the card to use most of the screen width */
-        height: 85%; /* Let the height adjust dynamically based on content */
-    }
-
-    .project-card-inner {
-        flex-direction: column; /* Ensure the content stacks nicely */
+        width: 90%; /* Keep the width intact */
+        height: 400px; /* Increase the height */
+        margin: 10px auto; /* Add space between cards */
     }
 
     .project-card-front, .project-card-back {
-        padding: 5px; /* Reduce padding to save space */
-        font-size: 14px; /* Adjust text size for readability */
+        padding: 20px; /* Maintain consistent spacing inside the card */
+        font-size: 16px; /* Ensure text remains readable */
     }
 
-    .project-card-front h3, .project-card-back h4 {
-        font-size: 16px; /* Ensure headings are still prominent */
+    .project-card-back {
+        max-height: 380px; /* Adjust back height slightly smaller than card height */
+        overflow-y: auto; /* Allow scrolling if content overflows */
     }
 
-    .projects-container {
-        padding: 10px; /* Add some breathing room around the container */
+    .project-card-inner {
+        height: 100%; /* Ensure inner content adjusts to the card height */
     }
 }
 
+
 .project-card-back {
     overflow-y: auto; /* Enable vertical scrolling for overflowing content */
-    max-height: 200px; /* Limit the height to avoid it looking too long */
+    max-height: 380px; /* Limit the height to avoid it looking too long */
 }
 
 
