@@ -29,7 +29,7 @@ section {
 /* Ensure Consistent Height for Cards */
 .project-card {
     perspective: 1000px;
-    width: 400px; /* Desktop width */
+    width: 550px; /* Desktop width */
     height: 400px; /* Consistent height */
     margin: 10px auto;
     overflow: hidden; /* Prevent content overflow */
