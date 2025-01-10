@@ -28,8 +28,8 @@ section {
 /* Card Styles */
 .project-card {
     perspective: 1000px;
-    width: 600px; /* Adjusted for 4:3 ratio */
-    height: 450px; /* Adjusted for 4:3 ratio */
+    width: 600px; /* 4:3 ratio width */
+    height: 450px; /* 4:3 ratio height */
     margin: 10px auto;
     overflow: hidden; /* Prevent content overflow */
 }
@@ -61,26 +61,24 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
+    align-items: flex-start; /* Align items to the start for better control */
     overflow-y: auto; /* Enable scrolling for longer content */
+    word-wrap: break-word; /* Ensures words wrap within boundaries */
+    hyphens: auto; /* Adds hyphens if needed for better word wrapping */
 }
 
-.project-card-back {
-    transform: rotateY(180deg);
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Specific Fix for Bullet Points in Back of Card */
+/* Specific Fix for Bullet Points */
 .project-card-back ul {
-    text-align: left; /* Aligns the text and bullets to the left */
-    padding-left: 20px; /* Adds space between the bullets and the card edge */
+    text-align: left; /* Align bullets and text to the left */
+    padding-left: 20px; /* Adds space between bullets and the card edge */
+    margin: 0; /* Reset margin for better alignment */
 }
 
 .project-card-back ul li {
-    margin-bottom: 8px; /* Adds consistent spacing between list items */
+    margin-bottom: 8px; /* Adds consistent spacing between bullet points */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+    hyphens: auto; /* Hyphenate long words for readability */
 }
-
 
 /* Navigation Bar */
 .navbar {
