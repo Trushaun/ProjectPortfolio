@@ -95,6 +95,7 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
+    display: none;
     color: #333; /* Change to visible if needed */
     background-color: transparent; /* No background */
     border: none; /* No borders */
