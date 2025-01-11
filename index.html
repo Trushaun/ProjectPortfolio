@@ -134,6 +134,8 @@
         document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
         loop: true,
+        slidesPerView: 1, // Only one slide visible at a time
+        spaceBetween: 0, // No spacing between slides
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -142,13 +144,9 @@
             el: '.swiper-pagination',
             clickable: true,
         },
-        slidesPerView: 1, // Ensure one slide is fully visible
-        spaceBetween: 0,  // Remove any extra space between slides
-        centeredSlides: false, // Prevent centering of slides which can cause sticking
-        resistance: false, // Reduce "drag resistance" when swiping
-        resistanceRatio: 0, // Completely disable resistance effect
     });
 });
+
     </script>
 </body>
 </html>
