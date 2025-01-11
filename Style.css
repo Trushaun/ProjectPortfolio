@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -96,31 +95,15 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
-    display: none;
-    color: transparent; /* Make the arrows transparent */
+    color: transparent; /* Make the arrows visible on larger screens */
     background-color: transparent; /* Ensure no background color */
     border: none; /* Remove any borders */
+    font-size: 20px; /* Adjust size */
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    color: transparent;
-}
-
-
-
-/* Contact Section */
-#contact {
-    text-align: center;
-}
-
-#contact a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
+    color: #555; /* Change color on hover for visibility */
 }
 
 /* Mobile Responsiveness */
@@ -131,22 +114,27 @@ section {
     }
 
     .navbar ul li a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 8px 12px;
     }
 
     .swiper {
         max-width: 100%;
-        padding: 5px 0;
+        padding: 10px 0;
     }
 
     .swiper-slide {
-        padding: 10px;
+        padding: 15px;
         font-size: 14px;
     }
 
     #contact {
         padding: 15px;
         font-size: 14px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none; /* Hide arrows on mobile devices */
     }
 }
