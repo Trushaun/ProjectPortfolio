@@ -106,19 +106,6 @@ section {
    /* bottom: 10px; /* Move closer to the bottom of the carousel */
 }
 
-.swiper-button-next {
-    right: 40%; /* Center relative to the carousel */
-}
-
-.swiper-button-prev {
-    left: 40%; /* Center relative to the carousel */
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover for better visibility */
-}
-
 
 /* Contact Section */
 #contact {
