@@ -95,7 +95,14 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #333;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: transparent;
 }
 
 /* Contact Section */
