@@ -72,22 +72,24 @@ section {
 
 /* Swiper Styles */
 .swiper {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width of container */
+    max-width: 800px; /* Limit max width */
+    margin: 20px auto; /* Center carousel */
+    overflow: hidden; /* Prevent overflow issues */
+    padding: 20px 0; /* Padding for visual space */
 }
+
 
 .swiper-slide {
     text-align: left;
-    padding: 20px;
+    padding: 20px; /* Keep consistent padding */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensure proper layout of content */
+    flex-direction: column; /* Organize slide content vertically */
+    width: 100%; /* Ensure slides take full width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .swiper-slide h3 {
