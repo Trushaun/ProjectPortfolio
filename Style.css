@@ -7,6 +7,12 @@ body {
     color: #333;
 }
 
+header {
+    text-align: center; /* Center-align text inside the header */
+    margin: 20px 0;
+}
+
+
 h1, h2 {
     text-align: center;
     color: #444;
