@@ -95,7 +95,7 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: transparent; /* Make the arrows visible on larger screens */
+    color: #333; /* Make the arrows visible on larger screens */
     background-color: transparent; /* Ensure no background color */
     border: none; /* Remove any borders */
     font-size: 20px; /* Adjust size */
