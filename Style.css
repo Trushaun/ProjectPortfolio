@@ -19,6 +19,13 @@ h1, h2 {
     color: #444;
 }
 
+.tagline {
+    text-align: center; /* Center-align the tagline */
+    margin: 0 auto; /* Ensure it centers properly */
+    font-size: 16px; /* Optional: Adjust the size */
+    color: #666; /* Optional: Adjust the color */
+}
+
 section {
     text-align: center;
     padding: 20px;
