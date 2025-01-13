@@ -112,10 +112,12 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #333; /* Make the arrows visible on larger screens */
+    color: transparent; /* Keep the arrows visible, adjust as needed */
     background-color: transparent; /* Ensure no background color */
     border: none; /* Remove any borders */
-    font-size: 20px; /* Adjust size */
+    font-size: 16px; /* Reduce the font size of the arrows */
+    width: 30px; /* Adjust the arrow button width */
+    height: 30px; /* Adjust the arrow button height */
 }
 
 .swiper-button-next:hover,
