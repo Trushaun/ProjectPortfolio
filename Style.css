@@ -1,45 +1,54 @@
 /* General Styles */
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
-
-header {
-    text-align: center; /* Center-align text inside the header */
-    margin: 20px 0;
-}
-
 
 h1, h2 {
     text-align: center;
-    color: #444;
-}
-
-.tagline {
-    text-align: center; /* Center-align the tagline */
-    margin: 0 auto; /* Ensure it centers properly */
-    font-size: 16px; /* Optional: Adjust the size */
-    color: #666; /* Optional: Adjust the color */
+    color: #0056b3; /* Primary color */
 }
 
 section {
-    text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 /* Navigation Bar */
 .navbar {
     background-color: #333;
+    color: white;
     padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -52,77 +61,61 @@ section {
     gap: 20px;
 }
 
-.navbar ul li {
-    display: inline;
-}
-
 .navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar ul li a:hover {
-    background-color: #555;
+    background-color: #0056b3;
     border-radius: 5px;
 }
 
-/* Swiper Styles */
-.swiper {
-    width: 100%; /* Full width of container */
-    max-width: 800px; /* Limit max width */
-    margin: 20px auto; /* Center carousel */
-    overflow: hidden; /* Prevent overflow issues */
-    padding: 20px 0; /* Padding for visual space */
+/* About Me Section */
+#about p {
+    text-align: justify;
+    margin: 10px 0;
 }
 
+/* Quotes Section */
+#quotes blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ffc107; /* Accent color */
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #ffc107;
+    background-color: #fff8e1;
+}
+
+/* Projects Carousel */
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
 
 .swiper-slide {
     text-align: left;
-    padding: 20px; /* Keep consistent padding */
+    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Ensure proper layout of content */
-    flex-direction: column; /* Organize slide content vertically */
-    width: 100%; /* Ensure slides take full width */
-    box-sizing: border-box; /* Include padding in width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.swiper-slide h3 {
-    margin-top: 0;
-    color: #444;
+/* Contact Section */
+#contact a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.swiper-slide ul {
-    padding-left: 20px;
-}
-
-.swiper-slide ul li {
-    margin-bottom: 8px;
-    list-style: disc;
-}
-
-.swiper-pagination {
-    margin-top: 10px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #333; /* Keep the arrows visible, adjust as needed */
-    background-color: transparent; /* Ensure no background color */
-    border: none; /* Remove any borders */
-    font-size: 16px; /* Reduce the font size of the arrows */
-    width: 30px; /* Adjust the arrow button width */
-    height: 30px; /* Adjust the arrow button height */
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    color: #555; /* Change color on hover for visibility */
+#contact a:hover {
+    text-decoration: underline;
+    color: #ffc107;
 }
 
 /* Mobile Responsiveness */
@@ -134,26 +127,9 @@ section {
 
     .navbar ul li a {
         font-size: 16px;
-        padding: 8px 12px;
     }
 
-    .swiper {
-        max-width: 100%;
-        padding: 10px 0;
-    }
-
-    .swiper-slide {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    #contact {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none; /* Hide arrows on mobile devices */
+    #about, #quotes, #projects, #contact {
+        padding: 20px;
     }
 }
