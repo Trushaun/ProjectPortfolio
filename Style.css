@@ -103,6 +103,17 @@ header .tagline {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep shadows for cards only */
 }
 
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    flex: 0 0 100%; /* Ensure each slide takes up 100% of the container width */
+    max-width: 100%; /* Prevent overflow issues */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+
 /* Contact Section */
 #contact a {
     color: #0056b3;
