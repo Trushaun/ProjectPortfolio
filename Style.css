@@ -112,7 +112,7 @@ section {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #333; /* Keep the arrows visible, adjust as needed */
+    color: transparent; /* Keep the arrows visible, adjust as needed */
     background-color: transparent; /* Ensure no background color */
     border: none; /* Remove any borders */
     font-size: 16px; /* Reduce the font size of the arrows */
