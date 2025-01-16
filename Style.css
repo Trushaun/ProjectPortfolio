@@ -18,8 +18,6 @@ section {
     margin: 20px auto;
     max-width: 1200px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -49,7 +47,6 @@ header .tagline {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
@@ -103,7 +100,7 @@ header .tagline {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep shadows for cards only */
 }
 
 /* Contact Section */
