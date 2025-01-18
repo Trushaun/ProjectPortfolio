@@ -25,7 +25,7 @@ header {
 
 .header-pic {
     width: 250px; /* Set the size of the profile picture */
-    height: 250px;
+    height: 350px;
     border-radius: 8px; /* Make the image circular */
     object-fit: cover; /* Ensure the image fits the circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus */
