@@ -10,7 +10,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #1414c3; /* Navy blue */
+    background-color: #01010d; /* Black */
     color: white; /* White text */
     padding: 20px;
     margin-bottom: 20px;
@@ -26,7 +26,7 @@ header {
 .header-pic {
     width: 250px; /* Set the size of the profile picture */
     height: 350px;
-    border-radius: 8px; /* Make the image circular */
+    border-radius: 15px; /* Make the image circular */
     object-fit: cover; /* Ensure the image fits the circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus */
 }
@@ -35,20 +35,21 @@ header {
     margin: 0;
     font-size: 2.5rem; /* Large name text */
     font-weight: bold;
+    color: #f1f1f1;
 }
 
 .header-text .title {
     margin: 5px 0 0;
     font-size: 1.2rem; /* Smaller title text */
     font-style: italic;
-    color: #b1b2b8; /* Accent yellow for the title */
+    color: #f1f1f1; /* Accent yellow for the title */
 }
 
 
 
 h1, h2 {
     text-align: center;
-    color: #444;
+    color: #f4f1f1;
 }
 
 .tagline {
