@@ -59,6 +59,23 @@ h1, h2 {
     color: #666; /* Optional: Adjust the color */
 }
 
+/* Container for Company Logos */
+.company-logos {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add spacing between logos */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 20px auto; /* Center the container and add vertical spacing */
+}
+
+/* Individual Company Logos */
+.company-logo {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: contain; /* Ensures the image fits without distortion */
+    display: block;
+}
+
 section {
     text-align: center;
     padding: 20px;
@@ -179,6 +196,15 @@ section {
         font-size: 1rem;
     }
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .company-logos {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center-align the stacked images */
+    }
+}
+
 
 @media (max-width: 768px) {
     .navbar ul {
