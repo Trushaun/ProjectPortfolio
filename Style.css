@@ -19,7 +19,7 @@ header {
 .header-container {
     display: flex; /* Flexbox layout */
     justify-content: space-around;
-    align-items: flex-start; /* Center vertically */
+    align-items: center; /* Center vertically */
     gap: 20px; /* Space between photo and text */
 }
 
