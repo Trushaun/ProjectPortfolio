@@ -10,7 +10,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #000080; /* Navy blue */
+    background-color: #1414c3; /* Navy blue */
     color: white; /* White text */
     padding: 20px;
     margin-bottom: 20px;
@@ -20,7 +20,7 @@ header {
     display: flex; /* Flexbox layout */
     justify-content: space-around;
     align-items: center; /* Center vertically */
-    gap: 20px; /* Space between photo and text */
+    gap: 10px; /* Space between photo and text */
 }
 
 .header-pic {
@@ -41,7 +41,7 @@ header {
     margin: 5px 0 0;
     font-size: 1.2rem; /* Smaller title text */
     font-style: italic;
-    color: #ffc107; /* Accent yellow for the title */
+    color: #b1b2b8; /* Accent yellow for the title */
 }
 
 
