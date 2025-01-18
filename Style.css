@@ -5,12 +5,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #878585;
 }
 
 /* Header Styling */
 header {
-    background-color: #0056b3; /* Primary blue */
+    background-color: #000080; /* Navy blue */
     color: white; /* White text */
     padding: 20px;
     margin-bottom: 20px;
@@ -18,14 +18,15 @@ header {
 
 .header-container {
     display: flex; /* Flexbox layout */
-    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    align-items: flex-start; /* Center vertically */
     gap: 20px; /* Space between photo and text */
 }
 
 .header-pic {
     width: 100px; /* Set the size of the profile picture */
     height: 100px;
-    border-radius: 50%; /* Make the image circular */
+    border-radius: 8px; /* Make the image circular */
     object-fit: cover; /* Ensure the image fits the circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus */
 }
