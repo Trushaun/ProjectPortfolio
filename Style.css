@@ -8,10 +8,41 @@ body {
     color: #333;
 }
 
+/* Header Styling */
 header {
-    text-align: center; /* Center-align text inside the header */
-    margin: 20px 0;
+    background-color: #0056b3; /* Primary blue */
+    color: white; /* White text */
+    padding: 20px;
+    margin-bottom: 20px;
 }
+
+.header-container {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Space between photo and text */
+}
+
+.header-pic {
+    width: 100px; /* Set the size of the profile picture */
+    height: 100px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Large name text */
+    font-weight: bold;
+}
+
+.header-text .title {
+    margin: 5px 0 0;
+    font-size: 1.2rem; /* Smaller title text */
+    font-style: italic;
+    color: #ffc107; /* Accent yellow for the title */
+}
+
 
 
 h1, h2 {
@@ -126,6 +157,27 @@ section {
 }
 
 /* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Center align on smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .header-pic {
+        width: 80px; /* Slightly smaller image for mobile */
+        height: 80px;
+    }
+
+    .header-text h1 {
+        font-size: 2rem; /* Adjust text size for mobile */
+    }
+
+    .header-text .title {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
