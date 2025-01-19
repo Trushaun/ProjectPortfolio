@@ -78,21 +78,25 @@ h1, h2 {
 /* Style for the Blockquote */
 #Quotes #cQuote {
     font-style: bold; /* Make the quote text italicized */
-    color: #666; /* Set the color of the quote text */
+    color: #666; 
+    Font-size: 1.3rem;
+    Text-align: center;
+}
+
 
 /* Container for Company Logos */
-#company-logos #company-logo {
+.company-logos {
     display: flex; /* Use Flexbox for alignment */
     justify-content: center; /* Center the images horizontally */
-    gap: 40px; /* Add spacing between logos */
+    gap: 20px; /* Add spacing between logos */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     margin: 20px auto; /* Center the container and add vertical spacing */
 }
 
 /* Individual Company Logos */
 .company-logo {
-    width: 175px; /* Fixed width */
-    height: 175px; /* Fixed height */
+    width: 145px; /* Fixed width */
+    height: 145px; /* Fixed height */
     object-fit: contain; /* Ensures the image fits without distortion */
     display: block;
 }
