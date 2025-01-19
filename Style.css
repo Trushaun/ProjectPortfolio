@@ -200,8 +200,9 @@ h1, h2 {
 
 /* Individual Company Logos */
 .company-logo {
-    width: 145px; /* Fixed width */
-    height: 145px; /* Fixed height */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    margin: 10px; /* Add spacing around each logo */
     object-fit: contain; /* Ensures the image fits without distortion */
     display: block;
 }
