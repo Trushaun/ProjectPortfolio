@@ -224,7 +224,7 @@ h1, h2 {
 /* Contact Section */
 #contact {
     display: flex; /* Flexbox layout for alignment */
-    justify-content: space-between; /* Space out the image and form */
+    /* justify-content: space-between; /* Space out the image and form */
     align-items: flex-start; /* Align items at the top */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     margin: 40px auto; /* Center the section */
@@ -238,7 +238,7 @@ h1, h2 {
 
 .contact-container {
     display: flex; /* Flexbox layout for form and image alignment */
-    justify-content: space-between; /* Space out the form and image */
+    /* justify-content: space-between; /* Space out the form and image */
     align-items: flex-start; /* Align items at the top */
     gap: 20px; /* Space between the form and image */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
