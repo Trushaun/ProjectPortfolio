@@ -93,7 +93,7 @@ h1, h2 {
 }
 
 #Quotes {
-    max-width: 800px;
+    max-width: 1000px;
     font-size: 1.2rem; /* Adjust the size for better readability */
     color: #333; /* Set the text color */
     text-align: center; /* Center-align the quotes in the section */
