@@ -223,12 +223,17 @@ h1, h2 {
 
 /* Contact Section */
 #contact {
-    margin: 40px auto; /* Space above and below */
-    padding: 20px; /* Internal spacing */
-    max-width: 1000px; /* Limit width */
-    text-align: center; /* Center align the section content */
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space out the image and form */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 40px auto; /* Center the section */
+    padding: 20px; /* Internal padding */
+    max-width: 1000px; /* Restrict the section width */
+    text-align: left; /* Align text naturally */
     font-family: Arial, sans-serif; /* Ensure readable font */
     color: #333; /* Text color */
+    gap: 20px; /* Space between the image and form */
 }
 
 .contact-container {
@@ -247,7 +252,7 @@ h1, h2 {
     flex-direction: column; /* Stack inputs vertically */
     gap: 15px; /* Space between inputs */
     /* margin-top: 20px; /* Space between heading and form */
-    text-align: left; /* Align labels and inputs to the left */
+    /* text-align: left; /* Align labels and inputs to the left */
 }
 
 /* Labels */
@@ -289,10 +294,10 @@ h1, h2 {
 /* Contact Photo */
 .contact-photo {
     flex: 1; /* Take up less space than the form */
-    max-width: 300px; /* Restrict maximum width */
-    width: 100%; /* Ensure image scales proportionally */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
+    /* max-width: 300px; /* Restrict maximum width */
+    width: 200px; /* Ensure image scales proportionally */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Rounded corners */
     object-fit: cover; /* Crop image appropriately */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
@@ -343,13 +348,13 @@ h1, h2 {
     .contact-form {
         gap: 10px; /* Reduce spacing on smaller screens */
     }
-    
+
     .contact-container {
         flex-direction: column; /* Stack form and image vertically */
         align-items: center; /* Center-align items */
     }
 
     .contact-photo {
-        margin-top: 20px; /* Add spacing above the image */
+        margin-bottom: 20px; /* Add spacing above the image */
     }
 }
