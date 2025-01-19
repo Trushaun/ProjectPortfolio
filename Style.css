@@ -234,13 +234,19 @@ section {
 
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row; /* Maintain horizontal layout */
+        flex-wrap: wrap; /* Allows wrapping if needed */
+        gap: 5px; /* Reduce spacing between links on smaller screens */
+    }
+
+    .navbar ul li a {
+        font-size: 0.9rem; /* Slightly smaller text for mobile */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
     }
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 10px 0;
     position: sticky;
