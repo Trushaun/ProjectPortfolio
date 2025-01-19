@@ -46,6 +46,11 @@ header {
     color: #f1f1f1; /* Accent yellow for the title */
 }
 
+section {
+    margin: 20px 0; /* Add space between sections */
+    max-width: 1200px; /* Limit width for better readability */
+}
+
 /* 3. Section Headers */
 h1, h2 {
     text-align: center;
