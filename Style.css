@@ -59,6 +59,20 @@ h1, h2 {
     color: #666; /* Optional: Adjust the color */
 }
 
+.quotes {
+    text-align: center;
+    margin: 20px auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+}
+
+.blockquote {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold-italic;
+}
+
 /* Container for Company Logos */
 .company-logos {
     display: flex; /* Use Flexbox for alignment */
