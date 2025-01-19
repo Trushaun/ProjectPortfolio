@@ -56,10 +56,9 @@ h1, h2 {
 
 /* 1. About Me Section */
 #about {
-
     font-family: Arial, sans-serif; /* 5. Set font to Arial */
     color: #000000; /* 5. Black text */
-    margin: 40 auto; /* Center content */
+    margin: 0 auto; /* Center content */
     max-width: 800px; /* 1. Restrict width for better readability */
     padding: 20px; /* 1. Add padding for spacing */
     text-align: justify; /* Optional: Justify the text */
@@ -76,7 +75,7 @@ h1, h2 {
     font-size: 1.2rem; /* Adjust the size for better readability */
     color: #333; /* Set the text color */
     text-align: center; /* Center-align the quotes in the section */
-    margin: 40px;
+    margin: none;
     padding: none;
 }
 
@@ -88,12 +87,6 @@ h1, h2 {
     font-size: 1.7rem;
     text-align: center;
 }
-
-#projects {
-    margin: 40px auto; /* Center content */
-    max-width: 800px; /* Limit width for better readability */
-    padding: 20px; /* Add padding for spacing */
-} 
 
 /* 2. Projects Carousel */
 .swiper {
