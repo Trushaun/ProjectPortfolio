@@ -61,35 +61,28 @@ h1, h2 {
     font-weight: bold; /* Make headers bolder */
 }
 
-/* About Me Section Styling */
+/* About Me Section */
 #about {
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Vertically align text and image */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    text-align: justify; /* Justify text for a clean look */
-    padding: 20px;
-    margin: 40px auto;
-    max-width: 800px; /* Limit section width for readability */
-}
-
-/* About Me Text */
-#about p {
-    flex: 2; /* Take up more space for the text */
-    margin: 10px;
+    margin: 40px auto; /* Add space above and below the section */
+    padding: 20px; /* Internal padding */
+    max-width: 800px; /* Restrict width for readability */
+    text-align: left; /* Align text to the left */
+    font-family: Arial, sans-serif; /* Set a readable font */
+    color: #000000; /* Black text for readability */
+    line-height: 1.6; /* Add line spacing for better readability */
 }
 
 /* About Me Image */
 .about-pic {
-    flex: 1; /* Take up less space for the image */
-    width: 150px; /* Fixed width */
+    float: right; /* Align image to the right */
+    width: 200px; /* Set a fixed width */
     height: auto; /* Maintain aspect ratio */
-    margin-left: 20px; /* Add spacing between text and image */
-    border-radius: 8px; /* Optional: Rounded corners */
-    object-fit: cover; /* Ensure the image fits nicely */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
-
+    margin: 0 0 10px 20px; /* Add spacing around the image */
+    /* border-radius: 8px; /* Optional: Rounded corners */
+    object-fit: cover; /* Ensure the image is cropped appropriately */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
+
 
 /* Style for the Quotes Section */
 .audiowide-regular {
@@ -233,6 +226,13 @@ h1, h2 {
     .navbar ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .about-pic {
+        float: none; /* Remove floating on small screens */
+        display: block; /* Ensure it behaves like a block element */
+        margin: 20px auto; /* Center the image */
+        width: 80%; /* Resize the image for mobile */
     }
 
     .navbar ul li a {
