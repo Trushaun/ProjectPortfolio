@@ -63,7 +63,7 @@ h1, h2 {
 .audiowide-regular {
     font-family: "Audiowide", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: bold;
   }
   
 #Quotes {
@@ -71,8 +71,8 @@ h1, h2 {
     font-size: 1.5rem; /* Adjust the size for better readability */
     color: #333; /* Set the text color */
     text-align: center; /* Center-align the quotes in the section */
-    margin: 20px auto;
-    padding: 20px;
+    margin: none;
+    padding: none;
 }
 
 /* Style for the Blockquote */
