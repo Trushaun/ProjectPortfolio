@@ -78,10 +78,7 @@ h1, h2 {
 /* Style for the Blockquote */
 #Quotes #cQuote {
     font-style: bold; /* Make the quote text italicized */
-    color: #555; /* A lighter shade for the text */
-    max-width: 800px; /* Set a maximum width for readability */
-    border-radius: 8px; /* Rounded corners for a polished look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    color: #666; /* Set the color of the quote text */
 
 /* Container for Company Logos */
 #company-logos #company-logo {
