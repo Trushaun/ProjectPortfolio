@@ -65,7 +65,7 @@ h1, h2 {
 #about {
     margin: 40px auto; /* Add space above and below the section */
     padding: 20px; /* Internal padding */
-    max-width: 600px; /* Restrict width for readability -- change back to 1000px if it doesn't look good */
+    max-width: 800px; /* Restrict width for readability -- change back to 1000px if it doesn't look good */
     text-align: center; /* Align text to the left */
     font-family: Arial, sans-serif; /* Set a readable font */
     color: #000000; /* Black text for readability */
