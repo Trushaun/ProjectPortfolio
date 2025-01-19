@@ -182,3 +182,36 @@ h1, h2 {
     background-color: #555;
     border-radius: 5px;
 }
+
+/* Mobile Responsiveness  and Settings to change for Mobile compatability */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .swiper {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+
+    .swiper-slide {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    #contact {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none; /* Hide arrows on mobile devices */
+    }
+}
