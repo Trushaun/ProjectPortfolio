@@ -14,6 +14,7 @@ header {
     color: white; /* White text */
     padding: 20px;
     margin-bottom: 20px;
+    text-align: center; /* change this if style doesn't work how you want */
 }
 
 .header-container {
@@ -135,7 +136,7 @@ section {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s;
@@ -231,12 +232,24 @@ section {
     }
 }
 
-
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps the nav bar on top */
+    width: 100%; /* Full width of the page */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
 
     .navbar ul li a {
         font-size: 16px;
@@ -262,4 +275,4 @@ section {
     .swiper-button-prev {
         display: none; /* Hide arrows on mobile devices */
     }
-}
+
