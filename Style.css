@@ -221,7 +221,7 @@ h1, h2 {
     display: block;
 }
 
-/* Contact Me Section */
+/* Contact Section */
 #contact {
     display: flex; /* Flexbox layout for alignment */
     justify-content: space-between; /* Space out the image and form */
@@ -236,31 +236,50 @@ h1, h2 {
     gap: 20px; /* Space between the image and form */
 }
 
-/* Contact Form */
-.contact-form {
-    flex: 2; /* Allow the form to take up more space */
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    gap: 15px; /* Space between form elements */
+.contact-container {
+    display: flex; /* Flexbox layout for form and image alignment */
+    justify-content: space-between; /* Space out the form and image */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the form and image */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px;
 }
 
-/* Form Inputs */
+/* Form Styling */
+.contact-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between inputs */
+    /* margin-top: 20px; /* Space between heading and form */
+    /* text-align: left; /* Align labels and inputs to the left */
+}
+
+/* Labels */
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Ensure labels are above inputs */
+}
+
+/* Inputs and Textarea */
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Full width of the form container */
-    padding: 10px; /* Internal padding */
+    width: 100%; /* Full width of form container */
+    padding: 10px; /* Internal spacing */
     border: 1px solid #ccc; /* Light border */
     border-radius: 5px; /* Rounded corners */
     font-size: 1rem;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box; /* Include padding in width */
 }
 
-/* Submit Button */
+/* Button */
 .contact-form button {
     padding: 10px 20px;
-    background-color: #0056b3; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
+    background-color: #0056b3; /* Primary color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
     border-radius: 5px; /* Rounded corners */
     font-size: 1rem;
     font-weight: bold;
@@ -274,11 +293,12 @@ h1, h2 {
 
 /* Contact Photo */
 .contact-photo {
-    flex: 1; /* Allow the image to take up less space */
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height to make it square */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fits the circle */
+    flex: 1; /* Take up less space than the form */
+    /* max-width: 300px; /* Restrict maximum width */
+    width: 200px; /* Ensure image scales proportionally */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Rounded corners */
+    object-fit: cover; /* Crop image appropriately */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
 
@@ -322,11 +342,19 @@ h1, h2 {
     }
 
     #contact {
-        flex-direction: column; /* Stack image and form vertically */
-        align-items: center; /* Center-align the items */
+        padding: 15px;
+    }
+
+    .contact-form {
+        gap: 10px; /* Reduce spacing on smaller screens */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack form and image vertically */
+        align-items: center; /* Center-align items */
     }
 
     .contact-photo {
-        margin-bottom: 20px; /* Add spacing below the image */
+        margin-bottom: 20px; /* Add spacing above the image */
     }
 }
