@@ -112,7 +112,7 @@ h1, h2 {
 /* 2. Projects Carousel */
 .swiper {
     width: 100%; /* Full width of container */
-    max-width: 1000px; /* Limit max width */
+    max-width: 800px; /* Limit max width */
     margin: 20px auto; /* Center carousel */
     overflow: hidden; /* Prevent overflow issues */
     padding: 20px 0; /* Padding for visual space */
