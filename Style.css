@@ -189,6 +189,24 @@ h1, h2 {
     border-radius: 5px;
 }
 
+/* Container for Company Logos */
+.company-logos {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add spacing between logos */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 20px auto; /* Center the container and add vertical spacing */
+}
+
+/* Individual Company Logos */
+.company-logo {
+    width: 145px; /* Fixed width */
+    height: 145px; /* Fixed height */
+    object-fit: contain; /* Ensures the image fits without distortion */
+    display: block;
+}
+
+
 /* Mobile Responsiveness  and Settings to change for Mobile compatability */
 @media (max-width: 768px) {
     .navbar ul {
