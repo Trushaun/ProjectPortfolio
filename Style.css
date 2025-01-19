@@ -46,6 +46,41 @@ header {
     color: #f1f1f1; /* Accent yellow for the title */
 }
 
+/* Hamburger Menu Icon */
+.menu-toggle {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hide by default (desktop view) */
+}
+
+/* Menu Links */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout for desktop */
+    gap: 20px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
 /* section {
    /* margin: 40px 0; /* Add space between sections */
    /* padding: 20px;
@@ -318,6 +353,37 @@ h1, h2 {
 
 /* Mobile Responsiveness  and Settings to change for Mobile compatability */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger menu */
+    }
+
+    .menu {
+        display: none; /* Hide menu by default on mobile */
+        position: absolute;
+        top: 50px; /* Below navbar */
+        right: 10px; /* Align to the right */
+        flex-direction: column; /* Stack links vertically */
+        background-color: #000; /* Black background */
+        width: 200px; /* Fixed width for dropdown */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    }
+
+    .menu li a {
+        padding: 10px 15px;
+        border-bottom: 1px solid #333; /* Separator between links */
+    }
+
+    .menu li a:last-child {
+        border-bottom: none; /* Remove separator for last item */
+    }
+}
+
+/* Show Menu on Mobile */
+.show-menu {
+    display: flex; /* Show the menu when toggled */
+}
+
     .navbar ul {
         flex-direction: block;
         gap: 10px;
