@@ -65,7 +65,7 @@ h1, h2 {
 #about {
     font-family: Arial, sans-serif; /* 5. Set font to Arial */
     color: #000000; /* 5. Black text */
-    margin: 0 auto; /* Center content */
+    margin: 40px 0; /* Center content */
     max-width: 1200px; /* 1. Restrict width for better readability */
     padding: 20px; /* 1. Add padding for spacing */
     text-align: center; /* Optional: Justify the text */
