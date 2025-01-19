@@ -48,7 +48,9 @@ header {
 
 section {
     margin: 20px 0; /* Add space between sections */
+    padding: 20px;
     max-width: 1200px; /* Limit width for better readability */
+    text-align: center; /* Center-align the content */
 }
 
 /* 3. Section Headers */
