@@ -300,7 +300,7 @@ h1, h2 {
     width: 200px; /* Ensure image scales proportionally */
     height: 200px; /* Maintain aspect ratio */
     border-radius: 50%; /* Rounded corners */
-    object-fit: cover; /* Crop image appropriately */
+    object-fit: none; /* Crop image appropriately */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
 
