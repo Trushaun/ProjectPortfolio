@@ -61,14 +61,34 @@ h1, h2 {
     font-weight: bold; /* Make headers bolder */
 }
 
-/* 1. About Me Section */
+/* About Me Section Styling */
 #about {
-    font-family: Arial, sans-serif; /* 5. Set font to Arial */
-    color: #000000; /* 5. Black text */
-    margin: 40px 0; /* Center content */
-    max-width: 1200px; /* 1. Restrict width for better readability */
-    padding: 20px; /* 1. Add padding for spacing */
-    text-align: center; /* Optional: Justify the text */
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align text and image */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    text-align: justify; /* Justify text for a clean look */
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px; /* Limit section width for readability */
+}
+
+/* About Me Text */
+#about p {
+    flex: 2; /* Take up more space for the text */
+    margin: 10px;
+}
+
+/* About Me Image */
+.about-pic {
+    flex: 1; /* Take up less space for the image */
+    width: 150px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add spacing between text and image */
+    border-radius: 8px; /* Optional: Rounded corners */
+    object-fit: cover; /* Ensure the image fits nicely */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+
 }
 
 /* Style for the Quotes Section */
