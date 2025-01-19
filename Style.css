@@ -77,7 +77,7 @@ h1, h2 {
     float: right; /* Align image to the right */
     width: 200px; /* Set a fixed width */
     height: auto; /* Maintain aspect ratio */
-    margin-left: 20px; /* Add spacing around the image, change this back to 20px if changes don't look good */
+    margin-right: 5px; /* Add spacing around the image, change this back to 20px if changes don't look good */
     /* border-radius: 8px; /* Optional: Rounded corners */
     object-fit: cover; /* Ensure the image is cropped appropriately */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
