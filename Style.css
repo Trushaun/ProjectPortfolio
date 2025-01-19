@@ -4,13 +4,13 @@ body {
     font-family: "roboto-flex", serif;
     margin: 0;
     padding: 0;
-    background-color: #abd5fb;
+    background-color: #fdf5e6; /* 4. Light cream color for the background */
     color: #878585;
 }
 
 /* Header Styling */
 header {
-    background-color: #01010d; /* Black */
+    background-color: #000000; /* 4. Black background for the header */
     color: white; /* White text */
     padding: 20px;
     margin-bottom: 20px;
@@ -27,7 +27,7 @@ header {
 .header-pic {
     width: 250px; /* Set the size of the profile picture */
     height: 350px;
-    border-radius: 15px; /* Make the image circular */
+    border-radius: 15px; /* Rounded corners */
     object-fit: cover; /* Ensure the image fits the circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus */
 }
@@ -46,18 +46,22 @@ header {
     color: #f1f1f1; /* Accent yellow for the title */
 }
 
-
-
+/* 3. Section Headers */
 h1, h2 {
     text-align: center;
     color: #f4f1f1;
+    font-size: 2.2rem; /* Larger font size */
+    font-weight: bold; /* Make headers bolder */
 }
 
-.tagline {
-    text-align: center; /* Center-align the tagline */
-    margin: 0 auto; /* Ensure it centers properly */
-    font-size: 16px; /* Optional: Adjust the size */
-    color: #666; /* Optional: Adjust the color */
+/* 1. About Me Section */
+#about {
+    font-family: Arial, sans-serif; /* 5. Set font to Arial */
+    color: #000000; /* 5. Black text */
+    margin: 0 auto; /* Center content */
+    max-width: 800px; /* 1. Restrict width for better readability */
+    padding: 20px; /* 1. Add padding for spacing */
+    text-align: justify; /* Optional: Justify the text */
 }
 
 /* Style for the Quotes Section */
@@ -65,10 +69,9 @@ h1, h2 {
     font-family: "Audiowide", serif;
     font-weight: 400;
     font-style: bold;
-  }
-  
+}
+
 #Quotes {
-    font-family: "", serif; /* Replace 'YourFontName' with the font you added */
     font-size: 1.2rem; /* Adjust the size for better readability */
     color: #333; /* Set the text color */
     text-align: center; /* Center-align the quotes in the section */
@@ -78,46 +81,42 @@ h1, h2 {
 
 /* Style for the Blockquote */
 #Quotes #cQuote {
-    font-family: "Audiowide", serif; /* Replace 'YourFontName' with the font you added */
-    font-style: bold; /* Make the quote text italicized */
+    font-family: "Audiowide", serif;
+    font-style: bold;
     color: #666; 
-    Font-size: 1.7rem;
-    Text-align: center;
-}
-
-
-/* Container for Company Logos */
-.company-logos {
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: center; /* Center the images horizontally */
-    gap: 20px; /* Add spacing between logos */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin: 20px auto; /* Center the container and add vertical spacing */
-}
-
-/* Individual Company Logos */
-.company-logo {
-    width: 145px; /* Fixed width */
-    height: 145px; /* Fixed height */
-    object-fit: contain; /* Ensures the image fits without distortion */
-    display: block;
-}
-
-section {
+    font-size: 1.7rem;
     text-align: center;
-    padding: 5px;
+}
+
+/* 2. Projects Carousel */
+.swiper-slide {
+    text-align: left;
+    padding: 15px; /* Reduce padding for tighter spacing */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.swiper-slide h3 {
+    margin-top: 0;
+    color: #444;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #333;
+    background-color: #000000; /* 4. Black background for the navbar */
+    color: white;
     padding: 10px 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Keeps the nav bar on top */
+    width: 100%; /* Full width of the page */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .navbar ul {
@@ -146,139 +145,3 @@ section {
     background-color: #555;
     border-radius: 5px;
 }
-
-/* Swiper Styles */
-.swiper {
-    width: 100%; /* Full width of container */
-    max-width: 800px; /* Limit max width */
-    margin: 20px auto; /* Center carousel */
-    overflow: hidden; /* Prevent overflow issues */
-    padding: 20px 0; /* Padding for visual space */
-}
-
-
-.swiper-slide {
-    text-align: left;
-    padding: 20px; /* Keep consistent padding */
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Ensure proper layout of content */
-    flex-direction: column; /* Organize slide content vertically */
-    width: 100%; /* Ensure slides take full width */
-    box-sizing: border-box; /* Include padding in width */
-}
-
-.swiper-slide h3 {
-    margin-top: 0;
-    color: #444;
-}
-
-.swiper-slide ul {
-    padding-left: 20px;
-}
-
-.swiper-slide ul li {
-    margin-bottom: 8px;
-    list-style: disc;
-}
-
-.swiper-pagination {
-    margin-top: 10px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: transparent; /* Keep the arrows visible, adjust as needed */
-    background-color: transparent; /* Ensure no background color */
-    border: none; /* Remove any borders */
-    font-size: 16px; /* Reduce the font size of the arrows */
-    width: 30px; /* Adjust the arrow button width */
-    height: 30px; /* Adjust the arrow button height */
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    color: #555; /* Change color on hover for visibility */
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column; /* Stack image and text */
-        align-items: center; /* Center align on smaller screens */
-        text-align: center; /* Center-align text */
-    }
-
-    .header-pic {
-        width: 80px; /* Slightly smaller image for mobile */
-        height: 80px;
-    }
-
-    .header-text h1 {
-        font-size: 2rem; /* Adjust text size for mobile */
-    }
-
-    .header-text .title {
-        font-size: 1rem;
-    }
-}
-
-/* Mobile Responsive Styling */
-@media (max-width: 768px) {
-    .company-logos {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center-align the stacked images */
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: row; /* Maintain horizontal layout */
-        flex-wrap: wrap; /* Allows wrapping if needed */
-        gap: 5px; /* Reduce spacing between links on smaller screens */
-    }
-
-    .navbar ul li a {
-        font-size: 0.9rem; /* Slightly smaller text for mobile */
-        padding: 8px 12px; /* Adjust padding for smaller screens */
-    }
-}
-
-.navbar {
-    background-color: #000000;
-    color: white;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Keeps the nav bar on top */
-    width: 100%; /* Full width of the page */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-
-    .navbar ul li a {
-        font-size: 16px;
-        padding: 8px 12px;
-    }
-
-    .swiper {
-        max-width: 100%;
-        padding: 10px 0;
-    }
-
-    .swiper-slide {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    #contact {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none; /* Hide arrows on mobile devices */
-    }
-
