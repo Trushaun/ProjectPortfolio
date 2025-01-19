@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f6c23f;
+    background-color: #abd5fb;
     color: #878585;
 }
 
@@ -59,19 +59,33 @@ h1, h2 {
     color: #666; /* Optional: Adjust the color */
 }
 
-.quotes {
-    text-align: center;
+/* Style for the Quotes Section */
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#Quotes {
+    font-family: "Audiowide", serif; /* Replace 'YourFontName' with the font you added */
+    font-size: 1.5rem; /* Adjust the size for better readability */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center-align the quotes in the section */
     margin: 20px auto;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-style: bold;
+    padding: 20px;
 }
 
-.blockquote {
-    text-align: center;
+/* Style for the Blockquote */
+#Quotes #cQuote {
+    font-style: bold; /* Make the quote text italicized */
+    color: #555; /* A lighter shade for the text */
+    border-left: 5px solid #ffc107; /* A colored vertical bar to emphasize the quote */
+    padding: 10px 20px;
     margin: 20px auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: bold-italic;
-}
+    max-width: 800px; /* Set a maximum width for readability */
+    background-color: #fff8e1; /* Subtle background for contrast */
+    border-radius: 8px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
 
 /* Container for Company Logos */
 .company-logos {
