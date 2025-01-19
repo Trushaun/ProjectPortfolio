@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: "roboto-flex", serif;
     margin: 0;
     padding: 0;
     background-color: #abd5fb;
@@ -67,8 +67,8 @@ h1, h2 {
   }
   
 #Quotes {
-    font-family: "Audiowide", serif; /* Replace 'YourFontName' with the font you added */
-    font-size: 1.5rem; /* Adjust the size for better readability */
+    font-family: "", serif; /* Replace 'YourFontName' with the font you added */
+    font-size: 1.2rem; /* Adjust the size for better readability */
     color: #333; /* Set the text color */
     text-align: center; /* Center-align the quotes in the section */
     margin: none;
@@ -77,9 +77,10 @@ h1, h2 {
 
 /* Style for the Blockquote */
 #Quotes #cQuote {
+    font-family: "Audiowide", serif; /* Replace 'YourFontName' with the font you added */
     font-style: bold; /* Make the quote text italicized */
     color: #666; 
-    Font-size: 1.3rem;
+    Font-size: 1.7rem;
     Text-align: center;
 }
 
