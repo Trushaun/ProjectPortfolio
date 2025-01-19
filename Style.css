@@ -63,15 +63,15 @@ h1, h2 {
 .company-logos {
     display: flex; /* Use Flexbox for alignment */
     justify-content: center; /* Center the images horizontally */
-    gap: 20px; /* Add spacing between logos */
+    gap: 40px; /* Add spacing between logos */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     margin: 20px auto; /* Center the container and add vertical spacing */
 }
 
 /* Individual Company Logos */
 .company-logo {
-    width: 100px; /* Fixed width */
-    height: 100px; /* Fixed height */
+    width: 175px; /* Fixed width */
+    height: 175px; /* Fixed height */
     object-fit: contain; /* Ensures the image fits without distortion */
     display: block;
 }
