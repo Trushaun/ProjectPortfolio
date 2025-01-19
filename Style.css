@@ -79,16 +79,12 @@ h1, h2 {
 #Quotes #cQuote {
     font-style: bold; /* Make the quote text italicized */
     color: #555; /* A lighter shade for the text */
-    border-left: 5px solid #ffc107; /* A colored vertical bar to emphasize the quote */
-    padding: 10px 20px;
-    margin: 20px auto;
     max-width: 800px; /* Set a maximum width for readability */
-    background-color: #fff8e1; /* Subtle background for contrast */
     border-radius: 8px; /* Rounded corners for a polished look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
 
 /* Container for Company Logos */
-.company-logos {
+#company-logos #company-logo {
     display: flex; /* Use Flexbox for alignment */
     justify-content: center; /* Center the images horizontally */
     gap: 40px; /* Add spacing between logos */
