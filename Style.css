@@ -245,7 +245,7 @@ h1, h2 {
     text-align: center; /* Align text naturally */
     font-family: Arial, sans-serif; /* Ensure readable font */
     color: #333; /* Text color */
-    gap: 20px; /* Space between the image and form */
+    gap: 10px; /* Space between the image and form */
 }
 
 /* Form Styling */
@@ -254,8 +254,8 @@ form {
     margin: 0 auto; /* Center the form */
     padding: 20px;
     background-color: #fdf5e6; /* Light cream background */
-    border: 1px solid #ddd; /* Subtle border */
-    border-radius: 8px; /* Rounded corners */
+    border: none; /* No border */
+    border-radius: 0px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
