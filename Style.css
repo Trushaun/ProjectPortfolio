@@ -239,7 +239,7 @@ h1, h2 {
     /* justify-content: space-between; /* Space out the image and form */
     align-items: flex-start; /* Align items at the top */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    margin: 40px auto; /* Center the section */
+    margin: 40px center; /* Center the section */
     padding: 20px; /* Internal padding */
     max-width: 800px; /* Restrict the section width */
     text-align: center; /* Align text naturally */
@@ -263,7 +263,7 @@ form {
 .form-group {
     margin-bottom: 15px; /* Add spacing between fields */
     text-align: left; /* Align labels and inputs to the left */
-    max-width: 400px; /* width of contact forms */
+    max-width: 300px; /* width of contact forms */
 }
 
 /* Labels */
