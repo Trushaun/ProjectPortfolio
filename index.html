@@ -265,28 +265,19 @@
     </script>
    
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const contactForm = document.getElementById('contactForm');
-        const formStatus = document.getElementById('formStatus');
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
 
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent the default form submission
-            
-            // Simulate successful form submission
-            formStatus.style.display = 'block'; // Show success message
-            
-            // Clear form fields
-            contactForm.reset();
+    contactForm.addEventListener('submit', (e) => {
+        // Optional: Show a quick confirmation message
+        formStatus.textContent = "Sending your message...";
+        formStatus.style.display = 'block';
 
-            // Scroll to the top of the webpage
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            // Optional: Hide the success message after a few seconds
-            setTimeout(() => {
-                formStatus.style.display = 'none';
-            }, 3000); // 3 seconds
-        });
+        // Allow the form to submit to Formspree (no preventDefault here)
     });
+});
+
 </script>
 
     
