@@ -313,7 +313,7 @@ form textarea {
 
 /* Contact Photo */
 .contact-photo {
-    flex: 1; /* Take up less space than the form */
+    flex: 0.2; /* Take up less space than the form */
     max-width: 300px; /* Restrict maximum width */
     width: 200px; /* Ensure image scales proportionally */
     height: 300px; /* Maintain aspect ratio */
