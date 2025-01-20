@@ -256,7 +256,7 @@ form {
     background-color: #fdf5e6; /* Light cream background */
     border: none; /* No border */
     border-radius: 0px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Add subtle shadow */
 }
 
 /* Form Group */
@@ -281,9 +281,9 @@ form textarea {
     width: 100%; /* Full width of the form group */
     padding: 10px;
     font-size: 1rem;
-    /* border: 1px solid #ccc; /* Subtle border */
-   /* border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding in width calculation */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    /* box-sizing: border-box; /* Include padding in width calculation */
     background-color: transparent;
 }
 
