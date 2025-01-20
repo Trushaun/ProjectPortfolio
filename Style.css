@@ -237,7 +237,7 @@ h1, h2 {
 #contact {
    /* display: flex; /* Flexbox layout for alignment - reassign this if webpage looks weird */
     /* justify-content: space-between; /* Space out the image and form */
-    /* align-items: flex-start; /* Align items at the top */
+     align-items: flex-start; /* Align items at the top */
    /* flex-wrap: wrap; /* Allow wrapping on smaller screens */
     /* margin: 40px auto; /* Center the section */
     /* padding: 20px; /* Internal padding */
