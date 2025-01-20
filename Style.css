@@ -239,7 +239,7 @@ form {
     margin: 0 auto; /* Center the form */
     padding: 20px;
     background-color: #fdf5e6; /* Light cream background */
-    border: 1px solid #ddd; /* Subtle border */
+    /* border: 1px solid #ddd; /* Subtle border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
@@ -291,13 +291,13 @@ form textarea {
 #contact {
     padding: 20px 10px;
     /* background-color: #f9f9f9; /* Light gray background */
-    border-top: 1px solid #ddd; /* Add a subtle border at the top */
-    border-bottom: 1px solid #ddd; /* Add a subtle border at the bottom */
+    /* border-top: 1px solid #ddd; /* Add a subtle border at the top */
+    /* border-bottom: 1px solid #ddd; /* Add a subtle border at the bottom */
 }
 
 /* Contact Photo */
 .contact-photo {
-    flex: 0.2; /* Take up less space than the form */
+    flex: 0.1; /* Take up less space than the form */
     max-width: 300px; /* Restrict maximum width */
     width: 200px; /* Ensure image scales proportionally */
     height: 300px; /* Maintain aspect ratio */
