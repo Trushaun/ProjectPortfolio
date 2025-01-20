@@ -279,7 +279,7 @@ h1, h2 {
 form {
     flex: 1; /* Allow the form to take up remaining space */
     max-width: 600px; /* Limit the width of the form */
-    padding: 20px;
+   /* padding: 20px; change back if needed */
     background-color: transparent; /* White background */
     border: 1px solid #ddd; /* Subtle border */
     border-radius: 8px; /* Rounded corners */
@@ -376,7 +376,7 @@ form textarea {
     }
 
     #contact {
-        padding: 15px;
+       /* padding: 15px; change back if needed */
         font-size: 14px;
     }
 
