@@ -263,6 +263,7 @@ form {
 .form-group {
     margin-bottom: 15px; /* Add spacing between fields */
     text-align: left; /* Align labels and inputs to the left */
+    max-width: 400px; /* width of contact forms */
 }
 
 /* Labels */
