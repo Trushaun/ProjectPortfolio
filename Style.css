@@ -318,9 +318,12 @@ form textarea {
 
 /* Mobile Responsiveness  and Settings to change for Mobile compatability */
 @media (max-width: 768px) {
+    header {
+        padding: 15px 10px; /* Reduce padding */
+    }
 
     .header-container {
-        flex-direction: block; /* Stack header elements */
+        flex-direction: column; /* Stack header elements */
         text-align: center; /* Center-align text and content */
     }
 
