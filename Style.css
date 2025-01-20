@@ -241,7 +241,7 @@ h1, h2 {
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     margin: 40px auto; /* Center the section */
     padding: 20px; /* Internal padding */
-    max-width: 1000px; /* Restrict the section width */
+    max-width: 800px; /* Restrict the section width */
     text-align: center; /* Align text naturally */
     font-family: Arial, sans-serif; /* Ensure readable font */
     color: #333; /* Text color */
