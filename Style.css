@@ -69,7 +69,7 @@ h1, h2 {
     max-width: 800px; /* Restrict width for readability -- change back to 1000px if it doesn't look good */
     text-align: center; /* Align text to the left */
     font-family: Arial, sans-serif; /* Set a readable font */
-    color: #000000; /* Black text for readability */
+    color: #878585; /* Black text for readability */
     line-height: 1.6; /* Add line spacing for better readability */
 }
 
