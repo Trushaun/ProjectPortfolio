@@ -376,11 +376,6 @@ form textarea {
         gap: 10px; /* Reduce spacing on smaller screens */
     }
 
-    .contact-container {
-        flex-direction: column; /* Stack form and image vertically */
-        align-items: center; /* Center-align items */
-    }
-
     .contact-photo {
         margin-bottom: 20px; /* Add spacing above the image */
     }
