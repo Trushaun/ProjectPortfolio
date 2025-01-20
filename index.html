@@ -212,8 +212,9 @@
         <h2>Contact Me</h2>
         <p>Ready to collaborate on your next project? Let's connect!</p>
         <div class="contact-container">
+            <form id="contactForm">
             <img src="Images/seattleTru.jpeg" alt="Trushaun Bell contact pic" class="contact-photo"> 
-         <form action="https://formspree.io/f/movvopzv" method="POST" class="contact-form">
+         
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             
@@ -225,6 +226,7 @@
             
             <button type="submit">Send Message</button>
          </form>
+            <p id="formStatus" style="color: Green; display: none;"> Your message has been sent successfully! </p>
         </div>    
     </section>
 
@@ -257,6 +259,31 @@
             <p>&copy; 2025 Trushaun Bell. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent the default form submission
+            
+            // Simulate successful form submission
+            formStatus.style.display = 'block'; // Show success message
+            
+            // Clear form fields
+            contactForm.reset();
+
+            // Scroll to the top of the webpage
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Optional: Hide the success message after a few seconds
+            setTimeout(() => {
+                formStatus.style.display = 'none';
+            }, 3000); // 3 seconds
+        });
+    });
+</script>
+
     
 </body>
 </html>
