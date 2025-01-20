@@ -263,29 +263,49 @@
 });
 
     </script>
-   
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
         const contactForm = document.getElementById('contactForm');
         const formStatus = document.getElementById('formStatus');
-        contactForm.addEventListener('submit', (e) => {
-            
-            
-            // Simulate successful form submission
-            formStatus.style.display = 'block'; // Show success message
-            
-            // Clear form fields
-            contactForm.reset();
-            // Scroll to the top of the webpage
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Optional: Hide the success message after a few seconds
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        Accept: 'application/json',
+                    },
+                });
+
+                if (response.ok) {
+                    formStatus.textContent = 'Your message has been sent successfully!';
+                    formStatus.style.color = 'green';
+                    formStatus.style.display = 'block';
+                    contactForm.reset();
+                } else {
+                    formStatus.textContent = 'Oops! Something went wrong. Please try again.';
+                    formStatus.style.color = 'red';
+                    formStatus.style.display = 'block';
+                }
+            } catch (error) {
+                formStatus.textContent = 'There was a problem submitting your form.';
+                formStatus.style.color = 'red';
+                formStatus.style.display = 'block';
+            }
+
+            // Hide the success message after a few seconds
             setTimeout(() => {
                 formStatus.style.display = 'none';
-            }, 3000); // 3 seconds
+            }, 5000); // 5 seconds
         });
     });
-
 </script>
+
 
     
 </body>
