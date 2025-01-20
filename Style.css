@@ -12,14 +12,14 @@ body {
 header {
     background-color: #000000; /* 4. Black background for the header */
     color: white; /* White text */
-    padding: 20px;
+    padding: 20px 10px;
     margin-bottom: 20px;
     text-align: center; /* change this if style doesn't work how you want */
 }
 
 .header-container {
     display: flex; /* Flexbox layout */
-    justify-content: space-around;
+    justify-content: center;
     align-items: center; /* Center vertically */
     gap: 10px; /* Space between photo and text */
 }
@@ -34,14 +34,14 @@ header {
 
 .header-text h1 {
     margin: 0;
-    font-size: 2.5rem; /* Large name text */
+    font-size: 1.5rem; /* Large name text */
     font-weight: bold;
     color: #f1f1f1;
 }
 
 .header-text .title {
     margin: 5px 0 0;
-    font-size: 1.2rem; /* Smaller title text */
+    font-size: 1rem; /* Smaller title text */
     font-style: italic;
     color: #f1f1f1; /* Accent yellow for the title */
 }
@@ -318,6 +318,29 @@ h1, h2 {
 
 /* Mobile Responsiveness  and Settings to change for Mobile compatability */
 @media (max-width: 768px) {
+    header {
+        padding: 15px 10px; /* Reduce padding */
+    }
+
+    .header-container {
+        flex-direction: column; /* Stack header elements */
+        text-align: center; /* Center-align text and content */
+    }
+
+    .header-pic {
+        width: 80px; /* Smaller image for mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px auto; /* Center the image with space below */
+    }
+
+    .header-text h1 {
+        font-size: 1.2rem; /* Smaller font for the name */
+    }
+
+    .header-text .title {
+        font-size: 0.9rem; /* Adjust title font size */
+    }
+    
     .navbar ul {
         flex-direction: block;
         gap: 10px;
