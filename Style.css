@@ -235,7 +235,7 @@ h1, h2 {
 
 /* Contact Section */
 #contact {
-   display: flex; /* Flexbox layout for alignment - reassign this if webpage looks weird */
+    /* display: flex; /* Flexbox layout for alignment - reassign this if webpage looks weird */
     /* justify-content: space-between; /* Space out the image and form */
     align-items: flex-start; /* Align items at the top */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -283,6 +283,7 @@ form textarea {
     border: 1px solid #ccc; /* Subtle border */
     border-radius: 5px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width calculation */
+    background-color: transparent;
 }
 
 /* Button Styling */
