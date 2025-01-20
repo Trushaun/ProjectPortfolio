@@ -273,7 +273,7 @@ form {
     flex: 1; /* Allow the form to take up remaining space */
     max-width: 600px; /* Limit the width of the form */
     padding: 20px;
-    background-color: #fff; /* White background */
+    background-color: transparent; /* White background */
     border: 1px solid #ddd; /* Subtle border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
