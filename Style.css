@@ -261,7 +261,7 @@ h1, h2 {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Align items vertically */
     gap: 20px; /* Add space between the photo and the form */
-    max-width: 1200px; /* Limit the width */
+   /* max-width: 1200px; /* Limit the width */
     margin: 0 auto; /* Center the container */
     text-align: left; /* Align text inside the container */
 }
@@ -386,15 +386,10 @@ form textarea {
     }
 
 .contact-container {
-   /* display: flex; */
     flex-direction: column; /* Stack photo and form vertically */
-    align-items: center; /* Center content */
-   /* justify-content: center; /* Center content horizontally */
-    width: 100%; /* Ensure full width of the screen */
-    padding: 15px; /* Add padding for spacing */
-    margin: 0 auto; /* Center the container */
-   /* box-sizing: border-box; /* Include padding in width calculations */
+    text-align: center; /* Center-align content for smaller screens */
 }
+
 
     .contact-photo {
         margin-bottom: 20px; /* Add space below the photo */
