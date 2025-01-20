@@ -234,12 +234,12 @@ h1, h2 {
 }
 
 /* Contact Section */
-#contact {
+form {
     /* display: flex; /* Flexbox layout for alignment - reassign this if webpage looks weird */
     /* justify-content: space-between; /* Space out the image and form */
     align-items: flex-start; /* Align items at the top */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    margin: 40px center; /* Center the section */
+    margin: 40px auto; /* Center the section */
     padding: 20px; /* Internal padding */
     max-width: 800px; /* Restrict the section width */
     text-align: center; /* Align text naturally */
@@ -248,75 +248,67 @@ h1, h2 {
     gap: 20px; /* Space between the image and form */
 }
 
-/* Form Styling */
-form {
-    max-width: 600px; /* Set a max width for the form */
-    margin: 0 auto; /* Center the form */
-    padding: 20px;
-    background-color: #fdf5e6; /* Light cream background */
-    border: none; /* No border */
-    border-radius: 0px; /* Rounded corners */
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Add subtle shadow */
+.form-group {
+    display: flex; /* Flexbox layout for form and image alignment */
+    /* justify-content: space-between; /* Space out the form and image */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the form and image */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px;
 }
 
-/* Form Group */
+/* Form Styling */
 .form-group {
-    margin-bottom: 15px; /* Add spacing between fields */
-    text-align: left; /* Align labels and inputs to the left */
-    max-width: 300px; /* width of contact forms */
+    flex: 2;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between inputs */
+    background-color: transparent;
+    /* margin-top: 20px; /* Space between heading and form */
+    /* text-align: left; /* Align labels and inputs to the left */
 }
 
 /* Labels */
 form label {
-    display: block; /* Make labels appear above inputs */
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 5px; /* Add space below the label */
-    color: #333;
+    margin-bottom: 5px;
+    display: block; /* Ensure labels are above inputs */
 }
 
-/* Inputs and Textareas */
-form input[type="text"],
-form input[type="email"],
+/* Inputs and Textarea */
+form input,
 form textarea {
-    width: 100%; /* Full width of the form group */
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc; /* Subtle border */
+    width: 100%; /* Full width of form container */
+    padding: 10px; /* Internal spacing */
+    border: 1px solid #ccc; /* Light border */
     border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding in width calculation */
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
     background-color: transparent;
 }
 
-/* Button Styling */
-.submit-button {
-    background-color: #000; /* Black background */
-    color: white; /* White text */
-    border: none; /* Remove border */
+/* Button */
+.submit button {
     padding: 10px 20px;
+    background-color: #0056b3; /* Primary color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 5px; /* Rounded corners */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-    background-color: #444; /* Darker on hover */
+.submit button:hover {
+    background-color: #003f8a; /* Darker blue on hover */
 }
-
-/* Add Spacing Around the Form Section */
-/* #contact { */
-  /*  padding: 40px 20px; */
-   /* background-color: #f9f9f9; /* Light gray background */
-  /*  border-top: 1px solid #ddd; /* Add a subtle border at the top */
-  /*  border-bottom: 1px solid #ddd; /* Add a subtle border at the bottom */
-/* } */
-
 
 /* Contact Photo */
 .contact-photo {
-    flex: 0.2; /* Take up less space than the form */
-    max-width: 300px; /* Restrict maximum width */
+    flex: 1; /* Take up less space than the form */
+    /* max-width: 300px; /* Restrict maximum width */
     width: 200px; /* Ensure image scales proportionally */
     height: 300px; /* Maintain aspect ratio */
     border-radius: 50%; /* Rounded corners */
