@@ -236,12 +236,12 @@ h1, h2 {
 /* Contact Section */
 #contact {
    /* display: flex; /* Flexbox layout for alignment - reassign this if webpage looks weird */
-    /* justify-content: space-between; /* Space out the image and form */
+    justify-content: space-between; /* Space out the image and form */
      align-items: flex-start; /* Align items at the top */
    /* flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    /* margin: 40px auto; /* Center the section */
+    margin: 40px auto; /* Center the section */
     /* padding: 20px; /* Internal padding */
-    max-width: 800px; /* Restrict the section width */
+    max-width: 700px; /* Restrict the section width */
     text-align: center; /* Align text naturally */
     font-family: Arial, sans-serif; /* Ensure readable font */
     color: #333; /* Text color */
