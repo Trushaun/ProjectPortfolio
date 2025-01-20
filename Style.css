@@ -388,7 +388,6 @@ form textarea {
   .contact-container {
         flex-direction: column; /* Stack photo and form vertically */
         text-align: center; /* Center-align content for smaller screens */
-      padding: 10px;
     }
 
     .contact-photo {
