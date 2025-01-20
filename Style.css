@@ -1,4 +1,11 @@
 /* General Styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
 body {
     text-align: center; /* remove this if it doesn't look good */
     font-family: "roboto-flex", serif;
