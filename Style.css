@@ -388,7 +388,7 @@ form textarea {
 .contact-container {
     flex-direction: column; /* Stack photo and form vertically */
     text-align: center; /* Center-align content for smaller screens */
-    width: 100%;
+    
 }
 
 
@@ -397,7 +397,7 @@ form textarea {
     }
 
     form {
-        max-width: none;
+        max-width: 768px;
         width: 100%; /* Full width on smaller screens */
     }
 }
