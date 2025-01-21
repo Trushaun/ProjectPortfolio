@@ -263,7 +263,7 @@ h1, h2 {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Align items vertically */
     gap: 20px; /* Add space between the photo and the form */
-   /* max-width: 1200px; /* Limit the width */
+    max-width: 1200px; /* Limit the width */
     margin: 0 auto; /* Center the container */
     text-align: left; /* Align text inside the container */
 }
@@ -378,7 +378,7 @@ form textarea {
     }
 
       #contact {
-        padding: 15px;
+        padding: 20px;
         font-size: 14px;
     }
 
@@ -390,15 +390,18 @@ form textarea {
 .contact-container {
     flex-direction: column; /* Stack photo and form vertically */
     align-items: center; /* Center-align content for smaller screens */
+    width: 100%;
     
 }
 
 
     .contact-photo {
-        margin-bottom: 20px; /* Add space below the photo */
+        margin-bottom: 10px; /* Add space below the photo */
     }
 
     form {
-        width: 100%; /* Full width on smaller screens */
+        width: 90%; /* Full width on smaller screens */
+        max-width: 600px;
+        padding: 10px;
     }
 }
