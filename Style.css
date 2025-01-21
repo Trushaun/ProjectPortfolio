@@ -279,7 +279,7 @@ h1, h2 {
 form {
     flex: 1; /* Allow the form to take up remaining space */
     max-width: 600px; /* Limit the width of the form */
-   /* padding: 20px; change back if needed */
+    padding: 20px;
     background-color: transparent; /* White background */
     border: 1px solid #ddd; /* Subtle border */
     border-radius: 8px; /* Rounded corners */
@@ -388,6 +388,7 @@ form textarea {
 .contact-container {
     flex-direction: column; /* Stack photo and form vertically */
     text-align: center; /* Center-align content for smaller screens */
+    width: 100%;
 }
 
 
