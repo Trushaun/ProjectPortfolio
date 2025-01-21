@@ -369,6 +369,10 @@ form textarea {
         font-size: 14px;
     }
 
+      #contact {
+        padding: 15px;
+        font-size: 14px;
+    }
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -377,7 +381,7 @@ form textarea {
 
 .contact-container {
     flex-direction: column; /* Stack photo and form vertically */
-    text-align: center; /* Center-align content for smaller screens */
+    align-items: center; /* Center-align content for smaller screens */
     
 }
 
